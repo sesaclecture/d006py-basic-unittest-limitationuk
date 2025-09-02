@@ -1,6 +1,16 @@
-# TODO: 사용자 모듈 import
+from funcs import even, avg, max, min
 
+def test_even():
+    assert True == even(10)
+    assert False == even(7)
 
-# TODO: 아래의 코드를 삭제하고 unittest를 작성하세요.
-def test_always():
-    assert False, "Remove me!"
+value = [10, 20, 30]
+
+def test_avg():
+    assert 20 == avg(value)
+
+def test_max():
+    assert 30 == max(value)
+
+def test_min():
+    assert 10 == min(value)
